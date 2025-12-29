@@ -1,0 +1,25 @@
+{
+  "name": "L8_NodeBase",
+  "version": "1.0.0",
+  "description": "ЛР8: Node.js базовая инфраструктура",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "dotenv -e .env.development -- nodemon index.js",
+    "build": "dotenv -e .env.production -- node mode.js",
+    "deploy": "dotenv -e .env.domain -- node mode.js",
+    "bcrypt": "dotenv -e .env.development -- node bcrypt.js",
+    "use": "dotenv -e .env.development -- node use.js",
+    "os": "dotenv -e .env.development -- node os/index.js",
+    "fs-demo": "dotenv -e .env.development -- node fs/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "dotenv-cli": "^7.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
